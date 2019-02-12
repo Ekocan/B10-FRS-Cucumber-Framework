@@ -6,10 +6,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BrowserUtils {
 
-    public static void wait(int seconds){
-        try{
-            Thread.sleep(1000*seconds);
-        }catch (InterruptedException e){
+    public static void wait(int seconds) {
+
+        try {
+            Thread.sleep(1000 * seconds);
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
@@ -26,6 +27,4 @@ public class BrowserUtils {
 
         return wait.until(ExpectedConditions.elementToBeClickable(element));
     }
-
-
 }
